@@ -1,208 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="google1553f0c3fff35c1e">
-  <title>Soul Sankhya - Website Updating Soon</title>
-
-  <!-- Google Fonts for friendly, easy-to-read text -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            title: ['"Comic Neue"', 'cursive', 'sans-serif'],
-            body: ['"Quicksand"', 'sans-serif'],
-          },
-          colors: {
-            brandBlue: '#0284c7',
-            skyBg: '#f0f9ff',
-            cardBg: '#ffffff',
-            warmOrange: '#f97316',
-            warmYellow: '#fef08a',
-            gentleGreen: '#16a34a'
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soul Sankhya - We are Updating Soon</title>
+    <meta name="google-site-verification" content="bsO3Wcmwg8HeskQwjh50f8aGdXcOBYx1ygl2lnGT0DM" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
-      }
-    }
-  </script>
+
+        body {
+            background-color: #f0f7ff;
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Top Header */
+        .header {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            border: 2px solid #bcdcff;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Large Logo Style */
+        .logo-box {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 12px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .logo-box img {
+            width: 140px;
+            height: auto;
+            display: block;
+        }
+
+        .site-title {
+            font-size: 32px;
+            color: #0b5394;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .site-subtitle {
+            font-size: 16px;
+            color: #555555;
+        }
+
+        /* Main Content Box */
+        .main-card {
+            width: 100%;
+            max-width: 800px;
+            background: #ffffff;
+            border: 2px solid #cce3de;
+            border-radius: 12px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #ffeaa7;
+            color: #8c5500;
+            padding: 6px 16px;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ffd166;
+        }
+
+        .main-heading {
+            font-size: 26px;
+            color: #222222;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 17px;
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Simple Notice Box */
+        .info-box {
+            background-color: #f7fafc;
+            border-left: 5px solid #0b5394;
+            padding: 15px;
+            text-align: left;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .info-box h3 {
+            font-size: 16px;
+            color: #0b5394;
+            margin-bottom: 6px;
+        }
+
+        .info-box p {
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        /* Form */
+        .contact-form {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .contact-input {
+            padding: 12px 16px;
+            font-size: 15px;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            width: 100%;
+            max-width: 320px;
+            outline: none;
+        }
+
+        .contact-input:focus {
+            border-color: #0b5394;
+        }
+
+        .submit-btn {
+            padding: 12px 24px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #0b5394;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #083c6c;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            font-size: 13px;
+            color: #718096;
+            text-align: center;
+        }
+    </style>
 </head>
+<body>
 
-<body class="bg-sky-50 font-body text-slate-800 min-h-screen flex flex-col justify-between selection:bg-amber-200">
-
-  <!-- Simple Top Helpline Ribbon (Just like classic school/society sites) -->
-  <div class="bg-sky-700 text-white text-xs sm:text-sm py-2 px-4 shadow-sm">
-    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between text-center sm:text-left gap-1">
-      <div class="flex items-center gap-2">
-        <span class="text-base">✨</span>
-        <span class="font-semibold tracking-wide">Welcome to Soul Sankhya Official Portal</span>
-      </div>
-      <div class="flex items-center gap-4 text-sky-100 text-xs">
-        <span>📧 contact@soulsankhya.org</span>
-        <span>📞 Helpline Available</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Header with Large, Prominent Logo and Title -->
-  <header class="bg-white border-b-4 border-sky-500 py-6 px-4 shadow-md">
-    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-5 text-center sm:text-left">
-      <!-- Large Prominent Logo Box -->
-      <div class="p-2 bg-white rounded-2xl shadow-md border-2 border-sky-100 flex items-center justify-center">
-        <img 
-          src="https://res.cloudinary.com/dpeijmtb6/image/upload/v1781073707/fil50jjlhwcf6edr8qln.png" 
-          alt="Soul Sankhya Logo" 
-          class="h-28 sm:h-32 w-auto object-contain transition-transform hover:scale-105"
-          onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex';"
-        />
-        <div id="logoFallback" class="hidden text-3xl font-bold text-sky-600 p-4">
-          🌸 Soul Sankhya
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-box">
+            <img src="https://res.cloudinary.com/dpeijmtb6/image/upload/v1781073707/fil50jjlhwcf6edr8qln.png" alt="Soul Sankhya Logo">
         </div>
-      </div>
+        <h1 class="site-title">Soul Sankhya</h1>
+        <p class="site-subtitle">Welcome to our official website</p>
+    </header>
 
-      <!-- Title & Subtitle -->
-      <div>
-        <h1 class="font-title text-3xl sm:text-4xl md:text-5xl font-bold text-sky-800 tracking-wide">
-          Soul Sankhya
-        </h1>
-        <p class="text-slate-600 font-semibold text-base sm:text-lg mt-1">
-          Spreading Joy, Learning & Positivity for Everyone 🌱
-        </p>
-        <span class="inline-block mt-2 px-3 py-1 bg-amber-100 text-amber-800 border border-amber-300 rounded-full text-xs font-bold">
-          Official Notice Board
-        </span>
-      </div>
-    </div>
-  </header>
-
-  <main class="flex-grow max-w-4xl mx-auto w-full px-4 py-8 sm:py-10">
-    
-    <!-- Big Friendly Notice Card -->
-    <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-lg border-2 border-sky-100 text-center relative overflow-hidden">
-      <!-- Cheerful Decorative Top Bar -->
-      <div class="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-amber-400 via-sky-400 to-emerald-400"></div>
-
-      <div class="inline-block bg-sky-100 text-sky-800 p-4 rounded-full mb-4 mt-2">
-        <span class="text-4xl">🛠️</span>
-      </div>
-
-      <h2 class="font-title text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 mb-3">
-        We Are Updating Our Website!
-      </h2>
-
-      <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed font-medium">
-        Hello friends! Our website is taking a short rest so we can add fresh updates, new pages, and fun improvements. We will be back very soon!
-      </p>
-
-      <!-- Easy 3-Step Simple Info Boxes (Friendly for 3rd class kids) -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 my-8 text-left">
-        <!-- Box 1 -->
-        <div class="bg-amber-50 border-2 border-amber-200 rounded-2xl p-4 flex items-start gap-3">
-          <span class="text-3xl">🎨</span>
-          <div>
-            <h3 class="font-bold text-amber-900 text-base">New Look</h3>
-            <p class="text-xs text-amber-800 font-medium mt-1">Adding brighter pictures, cheerful stories, and easy buttons.</p>
-          </div>
-        </div>
-
-        <!-- Box 2 -->
-        <div class="bg-emerald-50 border-2 border-emerald-200 rounded-2xl p-4 flex items-start gap-3">
-          <span class="text-3xl">⚡</span>
-          <div>
-            <h3 class="font-bold text-emerald-900 text-base">Super Fast</h3>
-            <p class="text-xs text-emerald-800 font-medium mt-1">Making pages open in a snap on phones and computers.</p>
-          </div>
-        </div>
-
-        <!-- Box 3 -->
-        <div class="bg-sky-50 border-2 border-sky-200 rounded-2xl p-4 flex items-start gap-3">
-          <span class="text-3xl">💛</span>
-          <div>
-            <h3 class="font-bold text-sky-900 text-base">Always Open</h3>
-            <p class="text-xs text-sky-800 font-medium mt-1">Our team is still working every day to help everyone.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bg-sky-50 rounded-2xl p-6 border border-sky-200 max-w-lg mx-auto">
-        <h4 class="font-bold text-sky-900 text-base sm:text-lg mb-1 flex items-center justify-center gap-2">
-          <span>🔔</span> Want a message when we are ready?
-        </h4>
-        <p class="text-xs sm:text-sm text-slate-600 mb-4">
-          Type your email or phone below. We'll send you a nice welcome message!
+    <!-- Main Message Card -->
+    <main class="main-card">
+        <span class="badge">Notice Board</span>
+        <h2 class="main-heading">We Are Updating Soon!</h2>
+        <p class="description">
+            Our website is currently being refreshed to serve you better. We are adding new information and pages, and we will be live very soon.
         </p>
 
-        <form id="contactForm" onsubmit="handleContact(event)" class="flex flex-col sm:flex-row gap-2">
-          <input 
-            type="text" 
-            id="userContact" 
-            required 
-            placeholder="Your Email or Mobile Number" 
-            class="flex-1 px-4 py-3 rounded-xl border border-sky-300 text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-sky-500 bg-white"
-          />
-          <button 
-            type="submit" 
-            class="bg-sky-600 hover:bg-sky-700 active:scale-95 text-white font-bold px-6 py-3 rounded-xl text-sm transition shadow-md flex items-center justify-center gap-2 cursor-pointer"
-          >
-            <span>Tell Me!</span> 🚀
-          </button>
+        <div class="info-box">
+            <h3>Quick Update</h3>
+            <p>We are making sure everything is simple, easy to read, and helpful for everyone. Thank you for your patience!</p>
+        </div>
+
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! We will notify you once we are live.');">
+            <input type="email" class="contact-input" placeholder="Enter your email address" required>
+            <button type="submit" class="submit-btn">Notify Me</button>
         </form>
+    </main>
 
-        <div id="successNote" class="hidden mt-3 p-3 bg-emerald-100 border border-emerald-300 text-emerald-800 rounded-xl text-xs font-semibold">
-          🎉 Thank you! We wrote down your contact and will notify you soon!
-        </div>
-      </div>
-
-      <!-- Simple Helpline Notice -->
-      <div class="mt-8 pt-6 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-slate-600">
-        <div class="flex items-center gap-2">
-          <span class="text-lg">📍</span>
-          <span>India / Welfare & Community Services</span>
-        </div>
-        <div class="flex items-center gap-2">
-          <span class="text-lg">⏰</span>
-          <span>Expected back online: <strong>Very Soon</strong></span>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- Clean, Familiar Light Footer -->
-  <footer class="bg-white border-t border-sky-100 py-6 px-4 text-center text-xs text-slate-500">
-    <div class="max-w-4xl mx-auto space-y-2">
-      <p class="font-bold text-sky-800 text-sm">Soul Sankhya Welfare & Community Organization</p>
-      <p>Thank you for your patience and love! Have a wonderful day full of smiles 😊</p>
-      <p class="text-slate-400 pt-2 border-t border-slate-100">&copy; <span id="year"></span> Soul Sankhya. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-  <script>
-    // Set current year automatically
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Clean form submission handler
-    function handleContact(event) {
-      event.preventDefault();
-      const input = document.getElementById('userContact');
-      const successBox = document.getElementById('successNote');
-
-      if (input.value.trim() !== '') {
-        successBox.classList.remove('hidden');
-        input.value = '';
-        setTimeout(() => {
-          successBox.classList.add('hidden');
-        }, 5000);
-      }
-    }
-  </script>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Soul Sankhya. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
