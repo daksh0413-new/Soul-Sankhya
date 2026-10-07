@@ -3,209 +3,320 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soul Sankhya - We are Updating Soon</title>
+    <title>Soul Sankhya | Shweta Rathi - Numerologist & Vastu Consultant</title>
+    
+    <!-- Search Console Verification -->
     <meta name="google-site-verification" content="bsO3Wcmwg8HeskQwjh50f8aGdXcOBYx1ygl2lnGT0DM" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Official website of Soul Sankhya by Shweta Rathi. Certified Numerologist, Vastu Expert & Tarot Consultant offering personalized life path guidance and remedies.">
+    <meta name="keywords" content="Soul Sankhya, soulsankhya, Shweta Rathi, Numerology, Vastu Consultant, Tarot Card Reading, Name Correction, Greater Noida">
+    <meta name="author" content="Shweta Rathi">
+    <link rel="canonical" href="https://soulsankhya.vercel.app/" />
+
+    <!-- Favicon & Touch Icon (Cloudinary CDN) -->
+    <link rel="icon" type="image/png" sizes="192x192" href="https://res.cloudinary.com/dpeijmtb6/image/upload/w_192,h_192,c_fill/v1781073707/fil50jjlhwcf6edr8qln.png" />
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dpeijmtb6/image/upload/w_192,h_192,c_fill/v1781073707/fil50jjlhwcf6edr8qln.png" />
+
+    <!-- Google Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Soul Sankhya",
+      "founder": {
+        "@type": "Person",
+        "name": "Shweta Rathi"
+      },
+      "url": "https://soulsankhya.vercel.app/",
+      "logo": "https://res.cloudinary.com/dpeijmtb6/image/upload/w_500,h_500,c_fill/v1781073707/fil50jjlhwcf6edr8qln.png",
+      "telephone": "+917719403125",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "J Tower, 11th Ave, Gaur City 2, Greater Noida West",
+        "addressLocality": "Ghaziabad",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "201009",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.instagram.com/soul.sankhya",
+        "https://linktr.ee/soulsankhya"
+      ]
+    }
+    </script>
+
     <style>
+        :root {
+            --primary: #5c2d91;
+            --primary-dark: #431f6d;
+            --accent: #d4af37;
+            --text-dark: #2d3748;
+            --text-muted: #64748b;
+            --bg-light: #f9f8fc;
+            --card-bg: #ffffff;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
         body {
-            background-color: #f0f7ff;
-            color: #333333;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 20px 16px;
         }
 
-        /* Top Header */
-        .header {
+        .container {
             width: 100%;
-            max-width: 800px;
-            background: #ffffff;
-            border: 2px solid #bcdcff;
-            border-radius: 12px;
-            padding: 20px;
+            max-width: 720px;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            gap: 20px;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 30px 20px;
             text-align: center;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 15px rgba(92, 45, 145, 0.08);
+            border: 1px solid rgba(92, 45, 145, 0.1);
         }
 
-        /* Large Logo Style */
-        .logo-box {
+        .logo-wrap {
+            width: 130px;
+            height: 130px;
+            margin: 0 auto 16px auto;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(135deg, #d4af37, #5c2d91);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-wrap img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
             background: #ffffff;
-            border: 2px solid #e2e8f0;
-            border-radius: 15px;
-            padding: 12px;
-            margin-bottom: 15px;
-            display: inline-block;
-        }
-
-        .logo-box img {
-            width: 140px;
-            height: auto;
+            object-fit: cover;
             display: block;
         }
 
-        .site-title {
-            font-size: 32px;
-            color: #0b5394;
-            font-weight: bold;
-            margin-bottom: 5px;
+        .brand-title {
+            font-size: 30px;
+            color: var(--primary);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 4px;
         }
 
-        .site-subtitle {
+        .subtitle {
             font-size: 16px;
-            color: #555555;
+            color: var(--text-muted);
+            font-weight: 500;
+            margin-bottom: 12px;
         }
 
-        /* Main Content Box */
-        .main-card {
-            width: 100%;
-            max-width: 800px;
-            background: #ffffff;
-            border: 2px solid #cce3de;
-            border-radius: 12px;
-            padding: 35px 25px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        .badge {
+        .founder-tag {
             display: inline-block;
-            background-color: #ffeaa7;
-            color: #8c5500;
+            background: #f3ebfa;
+            color: var(--primary);
+            font-size: 14px;
+            font-weight: 600;
             padding: 6px 16px;
-            font-size: 15px;
-            font-weight: bold;
-            border-radius: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #ffd166;
-        }
-
-        .main-heading {
-            font-size: 26px;
-            color: #222222;
+            border-radius: 50px;
             margin-bottom: 15px;
         }
 
-        .description {
-            font-size: 17px;
+        .bio-text {
+            font-size: 15px;
             color: #4a5568;
-            line-height: 1.6;
-            margin-bottom: 25px;
+            max-width: 580px;
+            margin: 0 auto;
         }
 
-        /* Simple Notice Box */
-        .info-box {
-            background-color: #f7fafc;
-            border-left: 5px solid #0b5394;
-            padding: 15px;
-            text-align: left;
-            margin-bottom: 30px;
-            border-radius: 4px;
-        }
-
-        .info-box h3 {
-            font-size: 16px;
-            color: #0b5394;
-            margin-bottom: 6px;
-        }
-
-        .info-box p {
-            font-size: 14px;
-            color: #4a5568;
-        }
-
-        /* Form */
-        .contact-form {
+        /* Action Buttons */
+        .btn-group {
             display: flex;
+            gap: 12px;
             justify-content: center;
-            gap: 10px;
             flex-wrap: wrap;
-            margin-top: 15px;
+            margin-top: 20px;
         }
 
-        .contact-input {
-            padding: 12px 16px;
-            font-size: 15px;
-            border: 1px solid #cbd5e0;
-            border-radius: 6px;
-            width: 100%;
-            max-width: 320px;
-            outline: none;
-        }
-
-        .contact-input:focus {
-            border-color: #0b5394;
-        }
-
-        .submit-btn {
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
             padding: 12px 24px;
+            border-radius: 12px;
             font-size: 15px;
-            font-weight: bold;
-            background-color: #0b5394;
+            font-weight: 600;
+            text-decoration: none;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .btn:active {
+            transform: scale(0.98);
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
             color: #ffffff;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
         }
 
-        .submit-btn:hover {
-            background-color: #083c6c;
+        .btn-call {
+            background-color: var(--primary);
+            color: #ffffff;
         }
 
-        /* Footer */
-        .footer {
-            margin-top: 30px;
-            font-size: 13px;
-            color: #718096;
+        /* Section Card */
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+            border: 1px solid #edf2f7;
+        }
+
+        .section-heading {
+            font-size: 20px;
+            color: var(--text-dark);
+            margin-bottom: 16px;
+            border-left: 4px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .service-pill {
+            background: #fdfbf7;
+            border: 1px solid #f0e6d2;
+            padding: 12px;
+            border-radius: 10px;
             text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            color: #553c15;
+        }
+
+        /* Social / External Links */
+        .link-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .link-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            background: #f8fafc;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            transition: background 0.2s ease;
+        }
+
+        .link-item:hover {
+            background: #edf2f7;
+        }
+
+        /* Location Footer */
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+
+        .footer p {
+            margin-bottom: 4px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header class="header">
-        <div class="logo-box">
-            <img src="https://res.cloudinary.com/dpeijmtb6/image/upload/v1781073707/fil50jjlhwcf6edr8qln.png" alt="Soul Sankhya Logo">
-        </div>
-        <h1 class="site-title">Soul Sankhya</h1>
-        <p class="site-subtitle">Welcome to our official website</p>
-    </header>
+    <div class="container">
+        <!-- Main Intro Card -->
+        <header class="profile-card">
+            <div class="logo-wrap">
+                <img src="https://res.cloudinary.com/dpeijmtb6/image/upload/w_260,h_260,c_fill/v1781073707/fil50jjlhwcf6edr8qln.png" alt="Soul Sankhya Logo">
+            </div>
+            <h1 class="brand-title">Soul Sankhya</h1>
+            <p class="subtitle">Decode Your Destiny With Numbers & Energies</p>
+            <div class="founder-tag">Consultations by Shweta Rathi</div>
+            
+            <p class="bio-text">
+                Welcome to Soul Sankhya. Led by Certified Numerologist & Vastu Consultant Shweta Rathi, we provide personalized guidance to unlock balance, clarity, and success across life, career, and relationships.
+            </p>
 
-    <!-- Main Message Card -->
-    <main class="main-card">
-        <span class="badge">Notice Board</span>
-        <h2 class="main-heading">We Are Updating Soon!</h2>
-        <p class="description">
-            Our website is currently being refreshed to serve you better. We are adding new information and pages, and we will be live very soon.
-        </p>
+            <div class="btn-group">
+                <a href="https://wa.me/917719403125?text=Hello%20Shweta%20ji,%20I%20would%20like%20to%20book%20a%20consultation%20with%20Soul%20Sankhya." class="btn btn-whatsapp" target="_blank" rel="noopener">
+                    WhatsApp Consultation
+                </a>
+                <a href="tel:+917719403125" class="btn btn-call">
+                    Call Directly
+                </a>
+            </div>
+        </header>
 
-        <div class="info-box">
-            <h3>Quick Update</h3>
-            <p>We are making sure everything is simple, easy to read, and helpful for everyone. Thank you for your patience!</p>
-        </div>
+        <!-- Core Consultations -->
+        <section class="card">
+            <h2 class="section-heading">Consultation Services</h2>
+            <div class="services-grid">
+                <div class="service-pill">Birth Number & Grid Analysis</div>
+                <div class="service-pill">Name Correction</div>
+                <div class="service-pill">Vastu Consultations</div>
+                <div class="service-pill">Tarot Card Guidance</div>
+                <div class="service-pill">Mobile Numerology</div>
+                <div class="service-pill">Career & Match Making</div>
+            </div>
+        </section>
 
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! We will notify you once we are live.');">
-            <input type="email" class="contact-input" placeholder="Enter your email address" required>
-            <button type="submit" class="submit-btn">Notify Me</button>
-        </form>
-    </main>
+        <!-- Official Links -->
+        <section class="card">
+            <h2 class="section-heading">Connect With Soul Sankhya</h2>
+            <div class="link-list">
+                <a href="https://www.instagram.com/soul.sankhya" target="_blank" rel="noopener" class="link-item">
+                    <span>Instagram (@soul.sankhya)</span>
+                    <span>&rarr;</span>
+                </a>
+                <a href="https://linktr.ee/soulsankhya" target="_blank" rel="noopener" class="link-item">
+                    <span>Soul Sankhya Linktree</span>
+                    <span>&rarr;</span>
+                </a>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Soul Sankhya. All rights reserved.</p>
-    </footer>
+        <!-- Footer / Location Reference -->
+        <footer class="footer">
+            <p><strong>Soul Sankhya</strong> &bull; Gaur City 2, Greater Noida West, UP, India</p>
+            <p>&copy; 2026 Soul Sankhya. All rights reserved.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
